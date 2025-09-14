@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Experience</h1>
+        <p>Combining CSS Animations with JavaScript</p>
+    </header>
+
+    <main>
+        <section class="animation-control">
+            <h2>Animation Control Panel</h2>
+            <div class="control-buttons">
+                <button id="start-all" class="btn">Start All Animations</button>
+                <button id="stop-all" class="btn">Stop All Animations</button>
+                <button id="reset-all" class="btn">Reset All</button>
+            </div>
+        </section>
+
+        <section class="animation-demo">
+            <h2>CSS Animation Demos</h2>
+            
+            <div class="animation-card" id="card1">
+                <h3>Pulse Animation</h3>
+                <div class="animation-box pulse-box">
+                    <span>Click me!</span>
+                </div>
+                <div class="controls">
+                    <button class="btn-small toggle-animation" data-target="card1">Toggle Animation</button>
+                    <button class="btn-small change-color" data-target="card1">Change Color</button>
+                </div>
+            </div>
+            
+            <div class="animation-card" id="card2">
+                <h3>Slide Animation</h3>
+                <div class="animation-box slide-box">
+                    <span>Hover over me!</span>
+                </div>
+                <div class="controls">
+                    <button class="btn-small toggle-animation" data-target="card2">Toggle Animation</button>
+                    <button class="btn-small change-color" data-target="card2">Change Color</button>
+                </div>
+            </div>
+            
+            <div class="animation-card" id="card3">
+                <h3>Rotate Animation</h3>
+                <div class="animation-box rotate-box">
+                    <span>Click to rotate!</span>
+                </div>
+                <div class="controls">
+                    <button class="btn-small toggle-animation" data-target="card3">Toggle Animation</button>
+                    <button class="btn-small change-color" data-target="card3">Change Color</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-demo">
+            <h2>Interactive Demo</h2>
+            <div class="demo-container">
+                <div class="demo-box" id="interactive-box">
+                    <p>Interactive Box</p>
+                </div>
+                <div class="demo-controls">
+                    <label for="animation-select">Choose Animation:</label>
+                    <select id="animation-select">
+                        <option value="bounce">Bounce</option>
+                        <option value="shake">Shake</option>
+                        <option value="flip">Flip</option>
+                        <option value="swing">Swing</option>
+                    </select>
+                    <button id="apply-animation" class="btn">Apply Animation</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="function-demo">
+            <h2>JavaScript Function Demo</h2>
+            <div class="calculator">
+                <h3>Animation Calculator</h3>
+                <div class="calc-controls">
+                    <input type="number" id="duration-input" placeholder="Duration (ms)" value="1000">
+                    <input type="number" id="delay-input" placeholder="Delay (ms)" value="0">
+                    <button id="calculate-timing" class="btn">Calculate Total Time</button>
+                </div>
+                <div class="calc-result">
+                    <p id="timing-result">Total time: 0ms</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
